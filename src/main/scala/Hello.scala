@@ -2,7 +2,7 @@ import org.scalajs.dom
 import org.scalajs.dom.document
 import scala.scalajs.js.annotation.JSExportTopLevel
 
-@main def hello: Unit =
+def hello: Unit =
   document.addEventListener(
     "DOMContentLoaded",
     { (e: dom.Event) =>
