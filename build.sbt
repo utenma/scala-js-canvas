@@ -3,7 +3,7 @@ enablePlugins(ScalaJSPlugin)
 // this is an application with a main method
 scalaJSUseMainModuleInitializer := true
 
-val scala3Version = "3.1.2"
+val scala3Version = "3.1.3"
 
 lazy val root = project
   .in(file("."))
