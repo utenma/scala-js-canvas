@@ -3,6 +3,7 @@ import org.scalajs.dom
 import org.scalajs.dom.document
 
 @main def main: Unit = {
+  
   document.addEventListener(
     "DOMContentLoaded",
     (e: dom.Event) => setupUI()

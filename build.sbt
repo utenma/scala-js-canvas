@@ -11,7 +11,16 @@ lazy val root = project
     // version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
     // scala compiler flags
-    scalacOptions ++= Seq("-encoding", "utf-8", "-deprecation", "-feature"),
+    scalacOptions ++= Seq(
+      "-Yexplicit-nulls",
+      "-encoding",
+      "utf-8",
+      "-indent",
+      "-new-syntax",
+      "-explain",
+      "-deprecation",
+      "-feature"
+    ),
     // use a `main` method
     scalaJSUseMainModuleInitializer := true,
     scalaJSLinkerConfig ~= {
@@ -21,5 +30,5 @@ lazy val root = project
     libraryDependencies ++= Seq(
       "org.scala-js" %%% "scalajs-dom" % "2.3.0",
       "org.scalameta" %% "munit" % "0.7.29" % Test
-    ),
+    )
   )
